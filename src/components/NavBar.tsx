@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,6 +17,7 @@ export default function Navbar() {
     }`}>
       <div className="container mx-auto flex justify-between px-6">
         <span className="text-xl font-bold tracking-tighter">LUMINA</span>
+        <ThemeToggle />
         <button className="rounded-full bg-brand-primary px-5 py-2 text-sm font-semibold hover:bg-brand-accent transition">
           Get Started
         </button>

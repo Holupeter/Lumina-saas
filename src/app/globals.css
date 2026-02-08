@@ -15,8 +15,13 @@
   }
 }
 
-/* Base Styles */
-body {
-  background-color: var(--color-brand-dark);
-  color: white;
+/* Base Styles with Theme Support */
+@layer base {
+  body {
+    @apply bg-white text-slate-900 transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply bg-brand-dark text-white;
+  }
 }
