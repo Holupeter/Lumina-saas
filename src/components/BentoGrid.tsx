@@ -1,4 +1,5 @@
 import React from "react";
+import Terminal from "./Terminal";
 
 const BentoCard = ({ 
   title, 
@@ -39,7 +40,7 @@ export default function BentoGrid() {
             description="Track every request, latency spike, and error as they happen with millisecond precision."
             className="lg:col-span-2 lg:row-span-1"
           >
-            <div className="mt-8 h-32 w-full rounded-xl bg-gradient-to-r from-brand-primary/20 to-brand-accent/20 border border-white/5 animate-pulse" />
+            <Terminal />
           </BentoCard>
 
           {/* Card 2: Tall (Spans 2 rows) */}
