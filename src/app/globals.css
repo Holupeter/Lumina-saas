@@ -1,19 +1,5 @@
 @import "tailwindcss";
-
-@theme {
-  /* Brand Colors */
-  --color-brand-dark: #030712;
-  --color-brand-primary: #6366f1;
-  --color-brand-accent: #a855f7;
-
-  /* Custom Transitions & Animations */
-  --animate-reveal: reveal 0.8s cubic-bezier(0, 0, 0.2, 1) forwards;
-
-  @keyframes reveal {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-}
+@import "../styles/theme.css";
 
 /* Base Styles with Theme Support */
 @layer base {
