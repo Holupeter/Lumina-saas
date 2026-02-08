@@ -1,13 +1,18 @@
 import Hero from "@/components/Hero";
 import BentoGrid from "@/components/BentoGrid";
+import LogoCloud from "@/components/LogoCloud";
+import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <LogoCloud />
       <BentoGrid />
-      {/* This spacer helps us test the Navbar scroll effect */}
-      <div className="h-screen bg-brand-dark" />
+      <Pricing />
+      <FAQ />
     </main>
   );
 }
