@@ -1,6 +1,9 @@
 import React from "react";
 import Terminal from "./Terminal";
-import { Feature } from "@/types"; 
+import AIPulse from "./AIPulse";
+import GlobeGrid from "./GlobeGrid";
+import TypeSafeCode from "./TypeSafeCode";
+import { Feature } from "@/types";
 
 const featureData: Feature[] = [
   {
@@ -29,12 +32,12 @@ const featureData: Feature[] = [
   }
 ];
 
-const BentoCard = ({ 
-  feature, 
-  children 
-}: { 
-  feature: Feature; 
-  children?: React.ReactNode 
+const BentoCard = ({
+  feature,
+  children
+}: {
+  feature: Feature;
+  children?: React.ReactNode
 }) => (
   <div className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10 dark:hover:bg-white/5 light:bg-slate-50 light:border-slate-200 ${feature.className}`}>
     <div className="relative z-10">
@@ -53,22 +56,24 @@ export default function BentoGrid() {
         <h2 className="mb-12 text-3xl font-bold text-white dark:text-white light:text-slate-900 md:text-5xl">
           Engineered for <span className="text-brand-primary">Precision.</span>
         </h2>
-        
+
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2">
-          
-          
+
           <BentoCard feature={featureData[0]}>
             <Terminal />
           </BentoCard>
 
-          {/* Card 2 has the Robot Emoji */}
           <BentoCard feature={featureData[1]}>
-             <div className="mt-12 flex justify-center text-6xl opacity-20">🤖</div>
+            <AIPulse />
           </BentoCard>
 
-          
-          <BentoCard feature={featureData[2]} />
-          <BentoCard feature={featureData[3]} />
+          <BentoCard feature={featureData[2]}>
+            <GlobeGrid />
+          </BentoCard>
+
+          <BentoCard feature={featureData[3]}>
+            <TypeSafeCode />
+          </BentoCard>
 
         </div>
       </div>
