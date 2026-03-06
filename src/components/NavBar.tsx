@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
     { name: "Features", href: "#features" },
@@ -50,7 +49,6 @@ export default function Navbar() {
 
                 {/* Actions */}
                 <div className="flex items-center gap-4">
-                    <ThemeToggle />
                     <button className="rounded-full bg-brand-primary px-5 py-2 text-sm font-semibold text-white hover:bg-brand-accent transition shadow-lg shadow-brand-primary/20">
                         Get Started
                     </button>
