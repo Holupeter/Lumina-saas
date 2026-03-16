@@ -3,7 +3,7 @@
 
 A high-performance observability dashboard built for modern web teams. This project demonstrates advanced **Next.js 15** patterns, **React 19** features, and **Tailwind CSS v4** styling.
 
-[Live Demo] | [GitHub Repository]
+[Live Demo](https://lumina-desig.netlify.app/)
 
 ## 🚀 The Mission
 
